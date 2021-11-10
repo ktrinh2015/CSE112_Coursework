@@ -1,0 +1,8 @@
+Object subclass: Program [
+Program class >> get [
+^ #(
+#( 2 nil #( #goto #nolabel))
+#( 3 nil #( #dim #a 10d0))
+#( 4 nil #( #let #( #aput #a 50d0) 3d0))
+#( 5 nil #( #let #( #aput #noarray 5d0) #( #aget #a 90d0)))
+).]]
